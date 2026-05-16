@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =========================================
+   PAGE
+========================================= */
+
+.report-page {
+
+  min-height: 100vh;
+
+  padding: 32px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f8fafc
+    );
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.report-hero {
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e293b
+    );
+
+  color: white;
+
+  padding: 48px;
+
+  border-radius: 28px;
+
+  margin-bottom: 30px;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.08);
+}
+
+.report-hero h1 {
+
+  font-size: 48px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+
+  margin-bottom: 12px;
+}
+
+.report-hero p {
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color:
+    rgba(255,255,255,0.75);
+
+  max-width: 650px;
+}
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.report-main {
+
+  display: grid;
+
+  grid-template-columns:
+    320px 1fr;
+
+  gap: 28px;
+
+  align-items: start;
+}
+
+/* =========================================
+   LEFT PANEL
+========================================= */
+
+.report-left {
+
+  padding: 28px;
+
+  border-radius: 24px;
+
+  background: white;
+
+  border:
+    1px solid rgba(0,0,0,0.05);
+
+  height: fit-content;
+
+  position: sticky;
+
+  top: 110px;
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.04);
+}
+
+/* HEADINGS */
+
+.report-left h3,
+.process-box h4 {
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  margin-bottom: 16px;
+
+  color: #0f172a;
+}
+
+/* LIST */
+
+.report-left ul,
+.process-box ul {
+
+  list-style: none;
+
+  padding: 0;
+}
+
+.report-left li,
+.process-box li {
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  color: #475569;
+
+  margin-bottom: 10px;
+}
+
+/* ICON */
+
+.report-left li::before,
+.process-box li::before {
+
+  content: "✔";
+
+  color: #f97316;
+
+  margin-right: 10px;
+
+  font-weight: 700;
+}
+
+/* PROCESS BOX */
+
+.process-box {
+
+  margin-top: 28px;
+
+  padding-top: 24px;
+
+  border-top:
+    1px solid rgba(0,0,0,0.06);
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.report-right {
+  width: 100%;
+}
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.report-card {
+
+  width: 100%;
+
+  background: white;
+
+  padding: 36px;
+
+  border-radius: 28px;
+
+  border:
+    1px solid rgba(0,0,0,0.05);
+
+  box-shadow:
+    0 4px 20px rgba(0,0,0,0.04);
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 24px;
+}
+
+/* =========================================
+   FIELD
+========================================= */
+
+.field {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+/* FULL */
+
+.full {
+  grid-column: span 2;
+}
+
+/* =========================================
+   LABEL
+========================================= */
+
+.field label {
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.report-card input,
+.report-card textarea {
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border-radius: 14px;
+
+  border:
+    1px solid rgba(0,0,0,0.08);
+
+  background: white;
+
+  font-size: 15px;
+
+  color: #0f172a;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+/* FOCUS */
+
+.report-card input:focus,
+.report-card textarea:focus {
+
+  border-color: #f97316;
+
+  box-shadow:
+    0 0 0 4px rgba(249,115,22,0.08);
+}
+
+/* PLACEHOLDER */
+
+.report-card input::placeholder,
+.report-card textarea::placeholder {
+
+  color: #94a3b8;
+}
+
+/* TEXTAREA */
+
+.report-card textarea {
+
+  min-height: 140px;
+
+  resize: vertical;
+}
+
+/* CHAR COUNT */
+
+.char-count {
+
+  font-size: 13px;
+
+  color: #64748b;
+
+  text-align: right;
+}
+
+/* =========================================
+   CATEGORY
+========================================= */
+
+.category-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+/* BUTTON */
+
+.cat-btn {
+
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  border:
+    1px solid rgba(0,0,0,0.08);
+
+  background: white;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.cat-btn:hover {
+
+  border-color: #f97316;
+
+  color: #f97316;
+
+  background: #fff7ed;
+}
+
+/* ACTIVE */
+
+.cat-btn.active {
+
+  background:
+    linear-gradient(
+      135deg,
+      #f97316,
+      #fb923c
+    );
+
+  color: white;
+
+  border: none;
+
+  box-shadow:
+    0 10px 25px rgba(249,115,22,0.25);
+}
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.location-box {
+
+  display: flex;
+
+  gap: 12px;
+}
+
+.location-box input {
+  flex: 1;
+}
+
+/* LOCATION BUTTON */
+
+.loc-btn {
+
+  min-width: 180px;
+
+  padding: 14px 18px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e293b
+    );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.loc-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(15,23,42,0.18);
+}
+
+/* LOADING */
+
+.loc-btn.loading {
+
+  opacity: 0.9;
+
+  cursor: not-allowed;
+}
+
+/* LOADING WRAP */
+
+.location-loading {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+/* SPINNER */
+
+.loader {
+
+  width: 18px;
+  height: 18px;
+
+  border:
+    3px solid rgba(255,255,255,0.3);
+
+  border-top:
+    3px solid white;
+
+  border-radius: 50%;
+
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   UPLOAD BOX
+========================================= */
+
+.upload-box {
+
+  grid-column: span 2;
+
+  border:
+    2px dashed rgba(0,0,0,0.12);
+
+  border-radius: 22px;
+
+  padding: 42px;
+
+  text-align: center;
+
+  background: #fafafa;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.upload-box:hover {
+
+  border-color: #f97316;
+
+  background: #fff7ed;
+}
+
+/* TEXT */
+
+.upload-box p {
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 6px;
+
+  color: #334155;
+}
+
+.upload-box span {
+
+  font-size: 14px;
+
+  color: #64748b;
+}
+
+/* DIVIDER */
+
+.upload-divider {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 16px 0;
+}
+
+.upload-divider::before,
+.upload-divider::after {
+
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+
+.upload-btn {
+
+  display: inline-block;
+
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f97316,
+      #fb923c
+    );
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+
+.upload-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(249,115,22,0.25);
+}
+
+/* =========================================
+   IMAGE PREVIEW
+========================================= */
+
+.image-box {
+
+  grid-column: span 2;
+}
+
+.preview-img {
+
+  width: 100%;
+
+  max-height: 420px;
+
+  object-fit: cover;
+
+  border-radius: 22px;
+
+  margin-top: 10px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.report-actions {
+
+  grid-column: span 2;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+
+.report-actions button {
+
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* CANCEL */
+
+.cancel {
+
+  background: #f1f5f9;
+
+  color: #475569;
+}
+
+/* CANCEL HOVER */
+
+.cancel:hover {
+
+  background: #e2e8f0;
+}
+
+/* SUBMIT */
+
+.submit {
+
+  background:
+    linear-gradient(
+      135deg,
+      #f97316,
+      #fb923c
+    );
+
+  color: white;
+}
+
+/* SUBMIT HOVER */
+
+.submit:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(249,115,22,0.25);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .report-main {
+
+    grid-template-columns: 1fr;
+  }
+
+  .report-left {
+
+    position: relative;
+
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .report-page {
+    padding: 20px;
+  }
+
+  .report-hero {
+    padding: 32px;
+  }
+
+  .report-hero h1 {
+    font-size: 36px;
+  }
+
+  .report-card {
+
+    grid-template-columns: 1fr;
+
+    padding: 24px;
+  }
+
+  .full,
+  .upload-box,
+  .image-box,
+  .report-actions {
+
+    grid-column: span 1;
+  }
+
+  .location-box {
+
+    flex-direction: column;
+  }
+
+  .loc-btn {
+    width: 100%;
+  }
+
+  .report-actions {
+
+    flex-direction: column;
+
+    gap: 14px;
+  }
+
+  .report-actions button {
+    width: 100%;
+  }
+}

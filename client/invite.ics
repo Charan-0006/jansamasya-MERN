@@ -1,0 +1,69 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:GMT+5:30
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20260411T110000
+DTEND;TZID=Asia/Kolkata:20260411T130000
+DTSTAMP:20260407T095105Z
+ORGANIZER;CN=Mrityunjoy Barman:mailto:mrityunjoybarman@soa.ac.in
+UID:4dvl3rcbakn1lhlfeoj5pg011p@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=gowthamireddy_reddem@srmap.edu.in;X-NUM-GUESTS=0:mailto:gowthamired
+ dy_reddem@srmap.edu.in
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=harikishore2004@gmail.com;X-NUM-GUESTS=0:mailto:harikishore2004@gma
+ il.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=lavanyapwg05@gmail.com;X-NUM-GUESTS=0:mailto:lavanyapwg05@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Mrityunjoy Barman;X-NUM-GUESTS=0:mailto:mrityunjoy.iitg@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Mrityunjoy Barman;X-NUM-GUESTS=0:mailto:mrityunjoybarman@soa.ac.in
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=mtai10009.24@bitmesra.ac.in;X-NUM-GUESTS=0:mailto:mtai10009.24@bitm
+ esra.ac.in
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=nagandla.sricharan@gmail.com;X-NUM-GUESTS=0:mailto:nagandla.srichar
+ an@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=pgovindaraju11@gmail.com;X-NUM-GUESTS=0:mailto:pgovindaraju11@gmail
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sivaprof.cbe@gmail.com;X-NUM-GUESTS=0:mailto:sivaprof.cbe@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=varshandeepa2004@gmail.com;X-NUM-GUESTS=0:mailto:varshandeepa2004@g
+ mail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/dtc-jzcv-rvg
+X-MICROSOFT-CDO-OWNERAPPTID:-1548898030
+CREATED:20260407T093656Z
+DESCRIPTION:Welcome to the online session 15 of Day 2 in our conference ETA
+ ACT 2026. Please mark the date in your calendar.\n\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with
+  Google Meet: https://meet.google.com/dtc-jzcv-rvg\nOr dial: (US) +1 573-36
+ 0-1147 PIN: 918969020#\n\nLearn more about Meet at: https://support.google.
+ com/a/users/answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::
+ -
+LAST-MODIFIED:20260407T095102Z
+LOCATION:https://meet.google.com/dtc-jzcv-rvg
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ETAACT 2026: Online Session 15
+TRANSP:OPAQUE
+ATTACH;FILENAME="Notes - ETAACT 2026: Online Session 15";FMTTYPE=applicatio
+ n/vnd.google-apps.document:https://docs.google.com/document/d/1ajRILJtqwk8n
+ xxNsH9toToMlD0RS94oWsGFU5mLxfvU/edit
+END:VEVENT
+END:VCALENDAR

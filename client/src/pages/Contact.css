@@ -1,0 +1,564 @@
+/* ===== PAGE ===== */
+
+.contact-page {
+
+  min-height: 100vh;
+
+  padding:
+    100px
+    clamp(20px,5vw,80px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #050816,
+      #0f172a,
+      #111827
+    );
+
+  color: white;
+
+  font-family: "Poppins", sans-serif;
+
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+
+
+/* ===== GLOW EFFECTS ===== */
+
+.contact-page::before,
+.contact-page::after {
+
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  z-index: 0;
+}
+
+.contact-page::before {
+
+  width: 320px;
+  height: 320px;
+
+  background:
+    rgba(59,130,246,0.22);
+
+  top: -100px;
+  left: -100px;
+}
+
+.contact-page::after {
+
+  width: 380px;
+  height: 380px;
+
+  background:
+    rgba(168,85,247,0.2);
+
+  bottom: -120px;
+  right: -120px;
+}
+
+
+
+/* ===== HEADER ===== */
+
+.contact-header {
+
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.contact-header h1 {
+
+  font-size:
+    clamp(42px,6vw,72px);
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff,
+      #60a5fa,
+      #a78bfa
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-header p {
+
+  color: #cbd5e1;
+
+  font-size: 17px;
+}
+
+
+
+/* ===== TOP BAR ===== */
+
+.contact-top {
+
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 28px;
+
+  border-radius: 22px;
+
+  margin-bottom: 35px;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(20px);
+}
+
+.contact-top h3 {
+
+  font-size: 20px;
+}
+
+.contact-top span {
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+}
+
+
+
+/* ===== WRAPPER ===== */
+
+.contact-wrapper {
+
+  position: relative;
+
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1.1fr;
+
+  gap: 35px;
+}
+
+
+
+/* ===== LEFT ===== */
+
+.contact-left {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+
+
+/* ===== GLASS CARD ===== */
+
+.card,
+.faq,
+.support-box,
+.contact-right {
+
+  background:
+    rgba(255,255,255,0.06);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,0.35);
+}
+
+
+
+/* ===== INFO CARD ===== */
+
+.card {
+
+  padding: 30px;
+}
+
+.card h3 {
+
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+
+.card p {
+
+  margin-bottom: 14px;
+
+  color: #e2e8f0;
+
+  line-height: 1.6;
+}
+
+
+
+/* ===== MAP LINK ===== */
+
+.map-link {
+
+  display: inline-block;
+
+  margin-top: 12px;
+
+  color: #60a5fa;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.map-link:hover {
+
+  transform:
+    translateX(5px);
+}
+
+
+
+/* ===== MAP ===== */
+
+.map {
+
+  width: 100%;
+
+  height: 280px;
+
+  border: none;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+}
+
+
+
+/* ===== SUPPORT BOX ===== */
+
+.support-box {
+
+  padding: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37,99,235,0.2),
+      rgba(124,58,237,0.2)
+    );
+}
+
+.support-box h4 {
+
+  font-size: 22px;
+
+  margin-bottom: 12px;
+}
+
+.support-box p {
+
+  color: #e2e8f0;
+}
+
+
+
+/* ===== FAQ ===== */
+
+.faq {
+
+  padding: 28px;
+}
+
+.faq h3 {
+
+  margin-bottom: 20px;
+
+  font-size: 24px;
+}
+
+.faq p {
+
+  color: #cbd5e1;
+
+  margin-bottom: 14px;
+
+  line-height: 1.7;
+}
+
+
+
+/* ===== RIGHT FORM ===== */
+
+.contact-right {
+
+  padding: 35px;
+}
+
+
+
+/* ===== INPUTS ===== */
+
+.contact-right input,
+.contact-right textarea,
+.contact-right select {
+
+  width: 100%;
+
+  padding: 16px 18px;
+
+  margin-bottom: 18px;
+
+  border-radius: 16px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.05);
+
+  color: white;
+
+  font-size: 15px;
+
+  transition: 0.3s ease;
+
+  outline: none;
+}
+
+
+
+/* ===== PLACEHOLDER ===== */
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+
+  color: #94a3b8;
+}
+
+
+
+/* ===== SELECT ===== */
+
+.contact-right select {
+
+  color: #cbd5e1;
+}
+
+.contact-right option {
+
+  background: #0f172a;
+
+  color: white;
+}
+
+
+
+/* ===== FOCUS ===== */
+
+.contact-right input:focus,
+.contact-right textarea:focus,
+.contact-right select:focus {
+
+  border-color:
+    rgba(96,165,250,0.5);
+
+  box-shadow:
+    0 0 0 4px rgba(59,130,246,0.15);
+}
+
+
+
+/* ===== FILE INPUT ===== */
+
+.contact-right input[type="file"] {
+
+  padding: 14px;
+
+  cursor: pointer;
+}
+
+
+
+/* ===== BUTTON ===== */
+
+.contact-right button {
+
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 12px 30px rgba(37,99,235,0.35);
+}
+
+.contact-right button:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 16px 40px rgba(37,99,235,0.45);
+}
+
+
+
+/* ===== EMAIL ERROR ===== */
+
+.email-error {
+
+  color: #f87171;
+
+  font-size: 13px;
+
+  margin-top: -10px;
+
+  margin-bottom: 12px;
+}
+
+
+
+/* ===== TOAST ===== */
+
+.toast {
+
+  margin-top: 20px;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #10b981,
+      #059669
+    );
+
+  font-weight: 600;
+
+  animation:
+    fadeIn 0.4s ease;
+}
+
+
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(10px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1000px) {
+
+  .contact-wrapper {
+
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media (max-width: 700px) {
+
+  .contact-page {
+
+    padding: 80px 20px;
+  }
+
+  .contact-header h1 {
+
+    font-size: 42px;
+  }
+
+  .contact-top {
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    text-align: center;
+  }
+}
