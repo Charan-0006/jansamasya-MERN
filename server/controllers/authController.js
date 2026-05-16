@@ -81,14 +81,10 @@ const loginUser = async (req, res) => {
     }
 
     const token = jwt.sign(
-      {
-        id: user._id,
-      },
-      "secretkey",
-      {
-        expiresIn: "7d",
-      }
-    );
+ { id: user._id },
+ process.env.JWT_SECRET,
+ { expiresIn:"7d" }
+)
 
     res.json({
       message: "Login Successful",
