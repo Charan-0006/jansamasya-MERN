@@ -40,16 +40,23 @@ html,
 /* =========================================
    MAIN PAGE
 ========================================= */
-
 .auth-page {
 
-  width: 100vw;
+  width: 100%;
 
   min-height: 100vh;
 
-  display: grid;
+  display: flex;
 
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 60px;
+
+  padding: 60px 80px;
+
+  box-sizing: border-box;
 
   position: relative;
 
@@ -67,10 +74,8 @@ html,
 
   background-size: 400% 400%;
 
-  animation:
-    gradientMove 15s ease infinite;
+  animation: gradientMove 15s ease infinite;
 }
-
 /* Animated Background */
 
 @keyframes gradientMove {
@@ -136,11 +141,14 @@ html,
    LEFT PANEL
 ========================================= */
 
+
 .auth-left {
 
-  width: 100%;
+  flex: 1;
 
-  min-height: 100vh;
+  max-width: 700px;
+
+  min-height: auto;
 
   display: flex;
 
@@ -150,13 +158,9 @@ html,
 
   align-items: flex-start;
 
-  padding: 6rem 7rem;
+  padding: 0;
 
-  box-sizing: border-box;
-
-  position: relative;
-
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Decorative circles */
@@ -345,57 +349,43 @@ html,
 
 .auth-right {
 
-  width: 100%;
+  flex: 1;
 
-  min-height: 100vh;
+  min-height: auto;
 
   display: flex;
 
-  align-items: center;
-
   justify-content: center;
 
-  padding: 5rem;
+  align-items: center;
 
-  box-sizing: border-box;
+  padding: 0;
 
-  position: relative;
-
-  z-index: 1;
+  z-index: 2;
 }
 
 /* =========================================
    PREMIUM GLASS CARD
 ========================================= */
-
 .auth-card {
-
-  background:
-    rgba(15, 23, 42, 0.78);
-
-  backdrop-filter: blur(22px);
-
-  -webkit-backdrop-filter: blur(22px);
-
-  border:
-    1px solid rgba(255,255,255,0.08);
-
-  border-radius: 34px;
-
-  padding: 4rem 3.5rem;
 
   width: 100%;
 
   max-width: 520px;
 
-  box-shadow:
-    0 15px 45px rgba(0,0,0,0.35),
-    0 0 40px rgba(59,130,246,0.08);
+  padding: 3rem;
 
-  animation:
-    fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  margin: auto;
 
-  transition: all 0.35s ease;
+  background:
+    rgba(15,23,42,.78);
+
+  border-radius: 34px;
+
+  backdrop-filter: blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,.08);
 }
 .auth-card:hover {
   transform: translateY(-4px);
@@ -733,6 +723,7 @@ html,
 
   .auth-page {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
 
   .auth-left {
@@ -790,19 +781,13 @@ html,
 
 .hero-animation {
 
-  width: 420px;
+  width:100%;
 
-  margin: 0 0 3rem 0;
+  max-width:320px;
 
-  display: flex;
-
-  justify-content: flex-start;
-
-  align-items: center;
-
-  animation:
-    float 4s ease-in-out infinite;
+  margin-bottom:2rem;
 }
+
 .hero-player {
   width: 100%;
 }
