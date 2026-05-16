@@ -100,7 +100,7 @@ function AuthForm({ setUser }) {
     if (isLogin) {
 
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://jansamasya-mern.onrender.com/api/auth/login",
         {
           email,
           password,
@@ -134,7 +134,7 @@ function AuthForm({ setUser }) {
     else {
 
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://jansamasya-mern.onrender.com/api/auth/register",
         {
           name,
           email,

@@ -31,7 +31,7 @@ function ViewIssues() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/issues"
+        "https://jansamasya-mern.onrender.com/api/issues"
       );
 
       setIssues(response.data);

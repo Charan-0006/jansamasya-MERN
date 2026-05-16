@@ -54,7 +54,7 @@ export default function Admin() {
 
       const response =
         await axios.get(
-          "http://localhost:5000/api/issues"
+          "https://jansamasya-mern.onrender.com/api/issues"
         );
 
       setIssues(response.data);
@@ -75,7 +75,7 @@ export default function Admin() {
 
       const response =
         await axios.get(
-          "http://localhost:5000/api/contact"
+          "https://jansamasya-mern.onrender.com/api/contact"
         );
 
       // NEWEST FIRST
@@ -109,7 +109,7 @@ export default function Admin() {
           : "Pending";
 
       await axios.put(
-        `http://localhost:5000/api/issues/${id}`,
+         `https://jansamasya-mern.onrender.com/api/issues/${id}`,
         {
           status: updatedStatus,
         }
@@ -132,7 +132,7 @@ export default function Admin() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/issues/${id}`
+         `https://jansamasya-mern.onrender.com/api/issues/${id}`
       );
 
       fetchIssues();

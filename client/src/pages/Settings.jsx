@@ -41,7 +41,7 @@ export default function Settings() {
       const response =
         await axios.put(
 
-          `http://localhost:5000/api/auth/${storedUser._id}`,
+           `https://jansamasya-mern.onrender.com/api/auth/${storedUser._id}`,
 
           {
             name,

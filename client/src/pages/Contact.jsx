@@ -9,6 +9,7 @@ export default function Contact() {
   const [success, setSuccess] = useState(false);
 
   const [form, setForm] = useState({
+    
     name: "",
     email: "",
     message: "",
@@ -63,7 +64,7 @@ export default function Contact() {
       // SEND TO BACKEND
 
       await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://jansamasya-mern.onrender.com/api/contact",
         {
           name: form.name,
           email: form.email,

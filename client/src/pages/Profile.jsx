@@ -47,7 +47,7 @@ export default function Profile() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/issues"
+         `https://jansamasya-mern.onrender.com/api/issues/${id}`
       );
 
       setIssues(response.data);

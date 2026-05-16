@@ -159,7 +159,7 @@ function Report({ user }) {
 };
 
       const response = await axios.post(
-        "http://localhost:5000/api/issues",
+         "https://jansamasya-mern.onrender.com/api/issues",
         newIssue
       );
 
