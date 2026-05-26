@@ -161,7 +161,7 @@ overflow-y: visible;
   align-items: flex-start;
 
   padding: 0;
-
+overflow: visible;
   z-index: 2;
 }
 
@@ -849,19 +849,17 @@ min-height: 600px;
 
   width: 100%;
 
-  max-width: 500px;
-
-  min-width: 350px;
+  max-width: 340px;
 
   display: flex;
 
-  justify-content: center;
+  justify-content: flex-start;
 
   align-items: center;
 
-  overflow: visible;
+  margin-bottom: 1rem;
 
-  margin-bottom: 2rem;
+  overflow: visible;
 }
 
 .hero-player {
@@ -870,9 +868,9 @@ min-height: 600px;
 
   height: auto;
 
-  overflow: visible;
+  transform: scale(0.9);
 
-  transform: scale(1.15);
+  transform-origin: left center;
 }
 
 @keyframes float {
@@ -887,5 +885,16 @@ min-height: 600px;
 
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1400px) {
+
+  .hero-animation {
+    max-width: 280px;
+  }
+
+  .auth-hero-text h1 {
+    font-size: clamp(3rem, 4vw, 4.5rem);
   }
 }
