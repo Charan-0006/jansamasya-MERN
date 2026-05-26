@@ -50,7 +50,7 @@ html,
 
   justify-content: space-between;
 
-  align-items: stretch;
+  align-items: center;
 
   gap: 60px;
 
@@ -60,7 +60,8 @@ html,
 
   position: relative;
 
-  overflow: hidden;
+  overflow-x: hidden;
+overflow-y: visible;
 
   background:
     linear-gradient(
@@ -846,15 +847,32 @@ min-height: 600px;
 
 .hero-animation {
 
-  width:100%;
+  width: 100%;
 
-  max-width:320px;
+  max-width: 500px;
 
-  margin-bottom:2rem;
+  min-width: 350px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: visible;
+
+  margin-bottom: 2rem;
 }
 
 .hero-player {
+
   width: 100%;
+
+  height: auto;
+
+  overflow: visible;
+
+  transform: scale(1.15);
 }
 
 @keyframes float {
