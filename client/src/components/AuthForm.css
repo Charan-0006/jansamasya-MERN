@@ -714,28 +714,85 @@ html,
     transform: translateY(0);
   }
 }
-
 /* =========================================
    RESPONSIVE
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   .auth-page {
-    grid-template-columns: 1fr;
-    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
   }
+
+  .auth-left {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .auth-hero-text h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .auth-hero-text p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .auth-features {
+    align-items: center;
+  }
+
+  .auth-right {
+    width: 100%;
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
 
   .auth-left {
     display: none;
   }
 
+  .auth-page {
+    padding: 20px;
+  }
+
   .auth-right {
-    padding: 1.5rem;
+    width: 100%;
+    padding: 0;
   }
 
   .auth-card {
-    padding: 2rem;
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .auth-card-title {
+    font-size: 2rem;
+  }
+
+  .role-tabs {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .role-tab {
+    width: 100%;
+  }
+
+  .auth-submit-btn {
+    width: 100%;
   }
 }
 /* PASSWORD WRAPPER */
