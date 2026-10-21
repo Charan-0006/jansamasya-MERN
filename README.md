@@ -6,6 +6,9 @@ JanSamasya is a full-stack MERN application that allows users to report, track, 
 
 ## 🌟 Features
 
+
+
+
 ### 👤 User Features
 
 * User Registration & Login
